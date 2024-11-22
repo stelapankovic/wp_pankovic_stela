@@ -1,0 +1,51 @@
+/* Postavljanje fontova */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; /* ID override */
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+/* Stilizacija glavnog sadržaja */
+p {
+    font-size: 16px; /* Default veličina */
+    color: #37474F;
+}
+
+p:nth-of-type(2) {
+    font-size: 18px;
+    color: #546E7A;
+}
+
+p:nth-of-type(3) {
+    font-size: 20px;
+    color: #78909C;
+}
+
+/* Klasa highlight */
+.highlight {
+    color: #FFC107;
+}
+
+/* Pozadina za listu */
+ul {
+    list-style-type: square;
+    padding: 0 20px;
+    background-color: #ECEFF1;
+}
+
+ul li {
+    margin: 5px 0;
+}
