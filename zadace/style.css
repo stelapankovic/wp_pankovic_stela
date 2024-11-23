@@ -11,7 +11,10 @@ h1 {
     font-size: 3rem; /* ID override */
     font-weight: 600;
 }
-
+h1 #main-title {
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif; /* Dodavanje fonta iz Google Fontova */
+}
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
@@ -31,21 +34,63 @@ p:nth-of-type(2) {
 
 p:nth-of-type(3) {
     font-size: 20px;
-    color: #78909C;
+    color: #78909c;    
 }
-
-/* Klasa highlight */
 .highlight {
-    color: #FFC107;
+    color: #ffc107;
 }
 
 /* Pozadina za listu */
-ul {
+ul{
     list-style-type: square;
     padding: 0 20px;
     background-color: #ECEFF1;
 }
+ /* Uklanjanje default stilova liste */
+ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Stilizacija stavki liste */
+ul li {
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Prva stavka - strelica */
+ul li:nth-child(1)::before {
+    content: "➤";
+    color: blue;
+    position: absolute;
+    left: 0;
+}
+
+/* Druga stavka - zvjezdica */
+ul li:nth-child(2)::before {
+    content: "★";
+    color: green;
+    position: absolute;
+    left: 0;
+}
+
+/* Treća stavka - kvadrat */
+ul li:nth-child(3)::before {
+    content: "■";
+    color: orange;
+    position: absolute;
+    left: 0;
+}
+style>
 
 ul li {
     margin: 5px 0;
+}
+
+
+ /* Stilizacija za treći paragraf */
+ p:nth-of-type(3) {
+    background-color: rgb(255, 223, 186); /* Pozadinska boja u RGB */
 }
