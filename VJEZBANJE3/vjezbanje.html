@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programiranje</title>
+    <style>
+       /* Zadatak 1 */
+       
+       p{
+            margin: 0%;
+        }
+        
+        .plava{
+            display: block;
+            background-color: blue;
+            width: 350px;
+            height: 70px;
+        }
+        .bijela{
+            display: block;
+            background-color: white; 
+            width: 350px;
+            height: 70px;
+
+        }
+        .crvena{
+            display: block;
+            background-color: red;
+            width: 350px;
+            height: 70px;
+        }
+        
+
+        /* Zadatak 2 */
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Zadatak 3 */
+        .input-field {
+            border: 2px solid green;
+            padding: 5px;
+            margin: 10px 0;
+        }
+
+        #special-input {
+            border: 2px solid blue;
+            background-color: lightyellow;
+        }
+
+        /* Zadatak 4 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .grid div {
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+     <!-- Zadatak 1 -->
+     <h2>Zadatak 1: Zastava Nizozemske</h2>
+     <div class="plava"></div>
+    <div class="bijela"></div>
+    <div class="crvena"></div>
+ 
+
+   
+
+    <!-- Zadatak 2 -->
+    <h2>Zadatak 2: Box Model</h2>
+    <div class="box"></div>
+
+    <!-- Zadatak 3 -->
+    <h2>Zadatak 3: Upotreba Klase i ID</h2>
+    <form>
+        <input type="text" class="input-field" placeholder="unesi ime">
+        <input type="text" id="special-input" class="input-field" placeholder="unesi prezime">
+    </form>
+
+    <!-- Zadatak 4 -->
+    <h2>Zadatak 4: CSS Grid</h2>
+    <div class="grid">
+        <div>Matematika</div>
+        <div>Hrvatski</div>
+        <div>Engleski</div>
+        <div>Njemački</div>
+        <div>Likovni</div>
+        <div>Glazbeni</div>
+        <div>Priroda</div>
+        <div>Fizika</div>
+        <div>Kemija</div>
+    </div>
+
+     <!-- Zadatak 5 -->
+     <h2>Zadatak 5: JavaScript</h2>
+     <script src="vjezbanje.js"></script>
+
+</body>
+</html>

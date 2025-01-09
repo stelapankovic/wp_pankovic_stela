@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programiranje</title>
+    <style>
+        /* Zadatak 1 */
+        .flag {
+            display: flex;
+            flex-direction: row;
+            width: 300px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        .flag .green {
+            background-color: green;
+            flex: 1;
+        }
+
+        .flag .white {
+            background-color: white;
+        flex: 1;
+        }
+
+        .flag .red {
+            background-color: red;
+            flex: 1;
+        }
+
+        /* Zadatak 2 */
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Zadatak 3 */
+        .input-field {
+            border: 2px solid green;
+            padding: 5px;
+            margin: 10px 0;
+        }
+
+        #special-input {
+            border: 2px solid blue;
+            background-color: lightyellow;
+        }
+
+        /* Zadatak 4 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .grid div {
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Zadatak 1 -->
+    <h2>Zadatak 1: Zastava Italije</h2>
+    <div class="flag">
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="red"></div>
+    </div>
+
+    <!-- Zadatak 2 -->
+    <h2>Zadatak 2: Box Model</h2>
+    <div class="box">Ovo je div s okvirima i sjenčanjem.</div>
+
+    <!-- Zadatak 3 -->
+    <h2>Zadatak 3: Upotreba Klase i ID</h2>
+    <form>
+        <input type="text" class="input-field" placeholder="Običan unos">
+        <input type="text" id="special-input" class="input-field" placeholder="Poseban unos">
+    </form>
+
+    <!-- Zadatak 4 -->
+    <h2>Zadatak 4: CSS Grid</h2>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <!-- Zadatak 5 -->
+    <h2>Zadatak 5: JavaScript</h2>
+    <script src="vjezbanje.js"></script>
+</body>
+</html>
+
+// index.js
+// Skripta za zadatak 5
+window.onload = function() {
+    let ime = prompt("Unesite vaše ime: ");
+    if (ime) {
+        alert(`Vaše ime je ${ime}.`);
+    }
+};
